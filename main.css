@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    width: 250px;
+    height: 250px;
+    margin: 100px auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    background-color: wheat;
+}
+.parent > img{
+    width: 100%;
+    height:75%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+} 
+.parent .one{
+    width: 100%;
+        height: 75%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: teal;
+        opacity: 0;
+}
+.parent .two{
+    width: 70%;
+        height: 25%;
+        position: absolute;
+        left: 15%;
+        top: 75%;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+        transition-duration: 1s;
+/*         transition-property:all;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0; */
+}
+.parent .two .bold{
+    font-weight: bold;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.parent .two .red{
+    color: rgb(133, 0, 0);
+}
+.parent:hover .two{
+    width: 100%;
+    left: 0;
+}
+.parent:hover .one{
+    opacity: 0.6;
+}
